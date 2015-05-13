@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a79f1785-0dee-4b17-9388-e35615399000" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Silva16\Desktop\-\AINET\www\project\.idea\aula05.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ainet/Controllers/AuthenticationController.php" afterPath="$PROJECT_DIR$/Ainet/Controllers/AuthenticationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ainet/Models/AbstractModel.php" afterPath="$PROJECT_DIR$/Ainet/Models/AbstractModel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ainet/Models/User.php" afterPath="$PROJECT_DIR$/Ainet/Models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ainet/Controllers/UserController.php" afterPath="$PROJECT_DIR$/Ainet/Controllers/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/users/add-edit.view.php" afterPath="$PROJECT_DIR$/views/users/add-edit.view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aula05.iws" />
@@ -39,12 +32,12 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ainet/Models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.576923" vertical-offset="663" max-vertical-offset="1547">
-              <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+            <state vertical-scroll-proportion="-21.576923" vertical-offset="765" max-vertical-offset="1649">
+              <caret line="78" column="35" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
               <folding>
-                <marker date="1431534651753" expanded="true" signature="722:741" placeholder="SELECT * FRO..users..." />
-                <marker date="1431534651753" expanded="true" signature="1373:1457" placeholder="INSERT INTO ..." />
-                <marker date="1431534651753" expanded="true" signature="1762:1819" placeholder="UPDATE users..." />
+                <marker date="1431534988079" expanded="true" signature="784:803" placeholder="SELECT * FRO..users..." />
+                <marker date="1431534988079" expanded="true" signature="1440:1524" placeholder="INSERT INTO ..." />
+                <marker date="1431534988079" expanded="true" signature="1829:1886" placeholder="UPDATE users..." />
               </folding>
             </state>
           </provider>
@@ -73,8 +66,8 @@
       <file leaf-file-name="AbstractModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ainet/Models/AbstractModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.86545455" vertical-offset="0" max-vertical-offset="1122">
-              <caret line="47" column="124" selection-start-line="47" selection-start-column="124" selection-end-line="47" selection-end-column="124" />
+            <state vertical-scroll-proportion="0.86545455" vertical-offset="17" max-vertical-offset="1122">
+              <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -152,6 +145,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -327,6 +323,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -376,12 +376,20 @@
       <option name="number" value="Default" />
       <updated>1428681444063</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second commit">
+      <created>1431534691177</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1431534691177</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -418,6 +426,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -476,9 +486,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1207">
           <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
           <folding>
-            <marker date="1431534651753" expanded="true" signature="722:741" placeholder="SELECT * FRO..users..." />
-            <marker date="1431534651753" expanded="true" signature="1373:1457" placeholder="INSERT INTO ..." />
-            <marker date="1431534651753" expanded="true" signature="1762:1819" placeholder="UPDATE users..." />
+            <marker date="1431534988079" expanded="true" signature="784:803" placeholder="SELECT * FRO..users..." />
+            <marker date="1431534988079" expanded="true" signature="1440:1524" placeholder="INSERT INTO ..." />
+            <marker date="1431534988079" expanded="true" signature="1829:1886" placeholder="UPDATE users..." />
           </folding>
         </state>
       </provider>
@@ -555,9 +565,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1207">
           <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
           <folding>
-            <marker date="1431534651753" expanded="true" signature="722:741" placeholder="SELECT * FRO..users..." />
-            <marker date="1431534651753" expanded="true" signature="1373:1457" placeholder="INSERT INTO ..." />
-            <marker date="1431534651753" expanded="true" signature="1762:1819" placeholder="UPDATE users..." />
+            <marker date="1431534988079" expanded="true" signature="784:803" placeholder="SELECT * FRO..users..." />
+            <marker date="1431534988079" expanded="true" signature="1440:1524" placeholder="INSERT INTO ..." />
+            <marker date="1431534988079" expanded="true" signature="1829:1886" placeholder="UPDATE users..." />
           </folding>
         </state>
       </provider>
@@ -819,20 +829,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ainet/Models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.576923" vertical-offset="663" max-vertical-offset="1547">
-          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+        <state vertical-scroll-proportion="-21.576923" vertical-offset="765" max-vertical-offset="1649">
+          <caret line="78" column="35" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
           <folding>
-            <marker date="1431534651753" expanded="true" signature="722:741" placeholder="SELECT * FRO..users..." />
-            <marker date="1431534651753" expanded="true" signature="1373:1457" placeholder="INSERT INTO ..." />
-            <marker date="1431534651753" expanded="true" signature="1762:1819" placeholder="UPDATE users..." />
+            <marker date="1431534988079" expanded="true" signature="784:803" placeholder="SELECT * FRO..users..." />
+            <marker date="1431534988079" expanded="true" signature="1440:1524" placeholder="INSERT INTO ..." />
+            <marker date="1431534988079" expanded="true" signature="1829:1886" placeholder="UPDATE users..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ainet/Models/AbstractModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.86545455" vertical-offset="0" max-vertical-offset="1122">
-          <caret line="47" column="124" selection-start-line="47" selection-start-column="124" selection-end-line="47" selection-end-column="124" />
+        <state vertical-scroll-proportion="0.86545455" vertical-offset="17" max-vertical-offset="1122">
+          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
           <folding />
         </state>
       </provider>

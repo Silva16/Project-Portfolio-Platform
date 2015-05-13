@@ -7,11 +7,12 @@
  */
 
 namespace Ainet\Models;
+
 use mysqli;
 
 
-
-class AbstractModel {
+class AbstractModel
+{
 
 
     public static function dbConnection()
@@ -23,8 +24,8 @@ class AbstractModel {
 
         try {
             $conn = new \mysqli($db['host'], $db['user'], $db['pass'], $db['name'], $db['port']);
-        } catch(Exception $e) {
-            die('Message: ' .$e->getMessage());
+        } catch (Exception $e) {
+            die('Message: ' . $e->getMessage());
         }
 
         return $conn;
@@ -32,10 +33,10 @@ class AbstractModel {
 
     public static function dbClose($conn)
     {
-        try{
+        try {
             $conn->close();
-        } catch(Exception $e){
-            die('Message: ' .$e->getMessage());
+        } catch (Exception $e) {
+            die('Message: ' . $e->getMessage());
         }
 
     }
@@ -45,19 +46,18 @@ class AbstractModel {
         if ($statement = $conn->prepare($query)) {
 
             if ($checkEdit == false) {
-                $statement->bind_param("ssssi", $user->name, $user->email, $user->password, $user->registeredAt, $user->role);
+                $statement->bind_param("ssssi", $user->name, $user->email, $user->password, $user->registeredAt,
+                    $user->role);
             } else {
                 $statement->bind_param("sssi", $user->name, $user->email, $user->type, $user->id);
             }
 
             $statement->execute();
             $statement->close();
-        }else{
+        } else {
             //var_dump($conn->error);
             var_dump($query);
         }
-
-
 
 
     }

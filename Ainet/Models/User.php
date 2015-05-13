@@ -11,8 +11,14 @@ class User extends AbstractModel
 
     public static $roles = array(0 => "Administrator", 1 => "Editor", 2 => "Author");
 
-    public function __construct($id=null, $email=null, $password=null, $name=null, $role=null, $registeredAt=null)
-    {
+    public function __construct(
+        $id = null,
+        $email = null,
+        $password = null,
+        $name = null,
+        $role = null,
+        $registeredAt = null
+    ) {
         $this->id = $id;
         $this->email = $email;
         $this->password = $password;
@@ -28,13 +34,13 @@ class User extends AbstractModel
         $query = "SELECT * FROM users";
 
         $statement = $conn->query($query);
-        try{
+        try {
 
-            while ($user = $statement->fetch_object()){
+            while ($user = $statement->fetch_object()) {
                 $users[$user->id] = $user;
             }
-        } catch(Exception $e){
-            echo 'Message: ' .$e->getMessage();
+        } catch (Exception $e) {
+            echo 'Message: ' . $e->getMessage();
         }
 
         AbstractModel::dbClose($conn);

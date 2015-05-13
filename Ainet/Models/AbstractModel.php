@@ -45,9 +45,9 @@ class AbstractModel {
         if ($statement = $conn->prepare($query)) {
 
             if ($checkEdit == false) {
-                $statement->bind_param("ssssi", $user->fullname, $user->email, $user->password, $user->registeredAt, $user->type);
+                $statement->bind_param("ssssi", $user->name, $user->email, $user->password, $user->registeredAt, $user->role);
             } else {
-                $statement->bind_param("sssi", $user->fullname, $user->email, $user->type, $user->id);
+                $statement->bind_param("sssi", $user->name, $user->email, $user->type, $user->id);
             }
 
             $statement->execute();

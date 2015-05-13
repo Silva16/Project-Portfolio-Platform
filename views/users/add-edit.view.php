@@ -10,7 +10,7 @@
 <div>
     <label for="type">Type:</label>
 
-    <select name="type"><?= HtmlHelper::selectBox(User::$types) ?></select><?= HtmlHelper::error($errors, 'type')?>
+    <select name="type"><?= HtmlHelper::selectBox(User::$roles) ?></select><?= HtmlHelper::error($errors, 'type')?>
 </div>
 <div>
     <label for="email">Email:</label>

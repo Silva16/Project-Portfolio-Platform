@@ -164,7 +164,7 @@ class UserController{
         $user->type = InputHelper::post('type');
             if($user->type == "----------") {
                 $errors['type'] = "Select a field";
-            }elseif (!array_key_exists($user->type, User::$types)){
+            }elseif (!array_key_exists($user->type, User::$roles)){
                 $errors['type'] = 'Type not exists!';
             }
 

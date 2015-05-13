@@ -2,7 +2,7 @@
 
 $config = [
     'database' => [
-        'name' => 'portofolioXXX',
+        'name' => 'portofolioDBxxx',
         'host' => 'localhost',
         'user' => 'root',
         'pass' => '123',

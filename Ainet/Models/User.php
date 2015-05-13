@@ -5,20 +5,20 @@ class User extends AbstractModel
     public $id;
     public $email;
     public $password;
-    public $fullname;
+    public $name;
     public $registeredAt;
-    public $type;
+    public $role;
 
-    public static $types = array(0 => "Administrator", 1 => "Publisher", 2 => "Client");
+    public static $roles = array(0 => "Administrator", 1 => "Editor", 2 => "Author");
 
-    public function __construct($id=null, $email=null, $password=null, $fullname=null, $type=null, $registeredAt=null)
+    public function __construct($id=null, $email=null, $password=null, $name=null, $role=null, $registeredAt=null)
     {
         $this->id = $id;
         $this->email = $email;
         $this->password = $password;
-        $this->fullname = $fullname;
+        $this->name = $name;
         $this->registeredAt = $registeredAt;
-        $this->type = $type;
+        $this->role = $role;
     }
 
     public static function all()
@@ -55,7 +55,7 @@ class User extends AbstractModel
     {
 
         $conn = AbstractModel::dbConnection();
-        $query = "INSERT INTO users (fullname, email, password, registeredAt, type) VALUES (?, ?, ?, ?, ?)";
+        $query = "INSERT INTO users (name, email, password, registeredAt, role) VALUES (?, ?, ?, ?, ?)";
         AbstractModel::dbQuery($conn, $user, $query);
 
         AbstractModel::dbClose($conn);
@@ -70,7 +70,7 @@ class User extends AbstractModel
         $checkEdit = true;
         //$email = $conn->real_escape_string($user->email);
 
-        $query = "UPDATE users set fullname = ?, email = ?, type = ? WHERE id=?";
+        $query = "UPDATE users set name = ?, email = ?, role = ? WHERE id=?";
         AbstractModel::dbQuery($conn, $user, $query, $checkEdit);
 
         AbstractModel::dbClose($conn);

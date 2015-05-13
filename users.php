@@ -2,7 +2,7 @@
 spl_autoload_register();
 
 use Ainet\Controllers\UserController;
-// comment: lol
+// comment
 session_start();
 include('config.php');
 if (!isset($_SESSION['authenticated'])){

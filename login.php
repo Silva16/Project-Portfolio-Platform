@@ -8,7 +8,7 @@ spl_autoload_register();
  */
 
 use Ainet\Controllers\AuthenticationController;
-//test
+
 include('config.php');
 
 $controller = new AuthenticationController;
